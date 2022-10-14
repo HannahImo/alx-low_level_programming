@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/**  
+/**
  * main - print numbers from 00 to 99.
  * Return: 0 success
  */
@@ -23,7 +23,7 @@ putchar('\n');
 }
 else
 {
-putchar(',');			
+putchar(',');
 putchar(' ');
 }
 }

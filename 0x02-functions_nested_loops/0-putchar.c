@@ -5,7 +5,7 @@
  * Return: 0
  */
 
-int main(void)
+int _putchar c (void)
 {
 _putchar( '_' );
 _putchar('p');
@@ -17,4 +17,4 @@ _putchar('a');
 _putchar('r');
 _putchar('\n');
 return (0);
-}
+},

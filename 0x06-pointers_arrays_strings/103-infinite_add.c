@@ -1,5 +1,5 @@
 #include "main.h"                                                                                                                       
-                                                                                                                                        
+                                                                                                                                       
 char *add_strings(char *n1, char *n2, char *r, int r_index);                                                                            
 char *infinite_add(char *n1, char *n2, char *r, int size_r);                                                                            
                                                                                                                                         
@@ -37,17 +37,17 @@ char *add_strings(char *n1, char *n2, char *r, int r_index)
                 num = (*n2 - '0') + tens;                                                                                               
                 *(r + r_index) = (num % 10) + '0';                                                                                      
                 tens = num / 10;                                                                                                        
-        }                                                                                                                               
-                                                                                                                                        
-        if (tens && r_index >= 0)                                                                                                       
-        {                                                                                                                               
-                *(r + r_index) = (tens % 10) + '0';                                                                                     
-                return (r + r_index);                                                                                                   
-        }                                                                                                                               
-                                                                                                                                        
-        else if (tens && r_index < 0)                                                                                                   
-                return (0);                                                                                                             
-                                                                                                                                        
-        return (r + r_index + 1);                                                                                                       
+}                                                                                                                               
+                                                                                                                                 
+if (tens && r_index >= 0)                                                                                                       
+{                                                                                                                               
+*(r + r_index) = (tens % 10) + '0';                                                                                     
+return (r + r_index);                                                                                                   
+}                                                                                                                               
+                                                                                                                                    
+else if (tens && r_index < 0)                                                                                                   
+return (0);                                                                                                     
+                                                                                                                                    
+return (r + r_index + 1);                                                                                                       
 }
 
